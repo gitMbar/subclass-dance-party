@@ -6,11 +6,15 @@ describe("blinkyDancer", function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    blinkyDancer = makeBlinkyDancer(10, 20, timeBetweenSteps);
+    blinkyDancer = new BlinkyDancer(10, 20, timeBetweenSteps);
   });
 
   it("should have a jQuery $node object", function(){
     expect(blinkyDancer.$node).to.be.an.instanceof(jQuery);
+  });
+
+  it("should be an instance of BlinkyDancer", function() {
+    expect(blinkyDancer).to.be.an.instanceof(BlinkyDancer);
   });
 
   it("should have a step function that makes its node blink", function() {

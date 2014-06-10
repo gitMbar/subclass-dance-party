@@ -6,11 +6,18 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/pbjDancer.js"></script>
   </head>
   <body>
+  <audio autoplay loop>
+    <source="/party.mp3">
+  </audio>
+  <video>
+  </video>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <a href="#" class="addDancerButton" id="blinky" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>    </div>
+      <a href="#" class="addDancerButton" id="pbj" data-dancer-maker-function-name="PbjDancer">add a pbj dancer</a>    </div>
     <script src="src/init.js"></script>
   </body>
 </html>
