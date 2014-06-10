@@ -14,6 +14,7 @@ body, a:link, a:visited, a:active{
   float:right;
 }
 .topbar{
+/*  margin-top: -140px;*/
   height:32px;
   background-color: #555;
 }
@@ -24,6 +25,7 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+  margin-top: 200px;
 }
 
 .banana-right{
@@ -37,4 +39,9 @@ body, a:link, a:visited, a:active{
   content:url(http://gamesloth-gridfs.herokuapp.com/grid/games/thumbnails/4f530e4ef15d812ce60002d0/peanutbutterjellytime.gif);
   height: 200px;
   width: 200px;
+}
+
+.dancefloor {
+  width: 500px;
+  height: 400px;
 }

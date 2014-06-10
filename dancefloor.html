@@ -7,10 +7,12 @@
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/pbjDancer.js"></script>
+    <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+    <script src="src/rotatepbjDancer.js"></script>
   </head>
   <body>
   <audio autoplay loop>
-    <source="/party.mp3">
+    <source src="vid/party.mp3" type="audio/mp3">
   </audio>
   <video>
   </video>
@@ -18,6 +20,10 @@
       <span class="title">object dance party</span>
       <a href="#" class="addDancerButton" id="blinky" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>    </div>
       <a href="#" class="addDancerButton" id="pbj" data-dancer-maker-function-name="PbjDancer">add a pbj dancer</a>    </div>
+       <a href="#" class="addDancerButton" id="pbj" data-dancer-maker-function-name="RotatePbjDancer">add a rotating pbj dancer</a>    </div>
+    <div class="dancefloor">
+    </div>
+
     <script src="src/init.js"></script>
   </body>
 </html>
