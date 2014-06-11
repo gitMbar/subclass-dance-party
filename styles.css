@@ -2,19 +2,20 @@ body, html{
   height:100%;
 }
 body{
-  margin: 0px;
+  margin: 0 auto;
   background-color:#444;
   font-size: 18px;
+  overflow: hidden;
+  background: url(http://web.mit.edu/lululiu/Public/pixx/full/10-4.jpg);
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addBlinkyDancer, .addPbjDancer{
+.title, .addDancerButton,{
   padding:5px 12px;
   float:right;
 }
 .topbar{
-/*  margin-top: -140px;*/
   height:32px;
   background-color: #555;
 }
@@ -22,26 +23,40 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
-  margin-top: 200px;
+
+}
+
+.blinky{
+  /*border:10px solid red;*/
+  background: red;
+  width: 10px;
+  height: 10px;
+  border-radius:10px;
 }
 
 .banana-right{
   content:url(http://i1.bebo.com/012/1/medium/2006/08/25/08/1539718312a1830171038b72421332m.jpg);
-  height: 200px;
-  width: 200px;
+  height: 50px;
+  width: 50px;
 }
 
 .banana-left{
-  /*border:10px solid blue;*/
   content:url(http://gamesloth-gridfs.herokuapp.com/grid/games/thumbnails/4f530e4ef15d812ce60002d0/peanutbutterjellytime.gif);
-  height: 200px;
-  width: 200px;
+  height: 50px;
+  width: 50px;
 }
 
-.dancefloor {
-  width: 500px;
-  height: 400px;
+.sprites, .animate {
+  visibility: hidden;
 }
+
+/*.upload {
+  visibility: hidden;
+}*/
+
+.dancefloor {
+  width: 100%;
+  height: 80%;
+}
+

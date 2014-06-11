@@ -8,19 +8,27 @@
     <script src="src/blinkyDancer.js"></script>
     <script src="src/pbjDancer.js"></script>
     <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
-    <script src="src/rotatepbjDancer.js"></script>
+    <script src="src/rotate.js"></script>
   </head>
   <body>
   <audio autoplay loop>
     <source src="vid/party.mp3" type="audio/mp3">
   </audio>
-  <video>
-  </video>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" id="blinky" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>    </div>
-      <a href="#" class="addDancerButton" id="pbj" data-dancer-maker-function-name="PbjDancer">add a pbj dancer</a>    </div>
-       <a href="#" class="addDancerButton" id="pbj" data-dancer-maker-function-name="RotatePbjDancer">add a rotating pbj dancer</a>    </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">Add a Blinky Dancer |</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="PbjDancer"> Add a Pbj Dancer |</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="RotatePbjDancer"> Add a Rotating Pbj Dancer | </a>
+      <a href="#" class="lineupButton"> Line 'em up! | </a>
+      <a href="#" class="addNewDancer"> Add a Dancer! | </a>
+        <ul class="sprites">
+          <li><a href="#" class="spriteChoice" data-dancer-maker-function-name="PbjDancer"> Add a Pbj Dancer </a>
+            <ul class="animate">Choose animation:
+              <li><a href="#" class="action" data-action-name="Rotate"> Rotate </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     <div class="dancefloor">
     </div>
 
